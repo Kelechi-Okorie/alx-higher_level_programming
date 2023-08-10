@@ -2,6 +2,8 @@
 import random
 number = random.randint(-1000, 1000)
 mod = number % 10
+if number < 0:
+    mod = ((number * -1) % 10) * -1
 print(f"Last digit of {number} is {mod}", end="")
 if mod > 5:
     print(f" and is greater than 5")

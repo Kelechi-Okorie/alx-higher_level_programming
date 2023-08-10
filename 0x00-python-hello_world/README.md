@@ -7,4 +7,5 @@ File 3-print_numbe.py - prints number and string
 File 4-print_float.py - prints float and string  
 File 5-print_string.py - prints strings
 File 6-conat.py - concatenates strings
-File 7-edges.py - prints edges of a string
+File 7-edges.py - prints edges of a string  
+File 8-concat_edges.py - concatenates and prints strings

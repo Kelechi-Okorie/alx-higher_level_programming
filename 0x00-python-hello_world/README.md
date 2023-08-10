@@ -3,4 +3,5 @@
 File 0-run - a shell script that runs a python script  
 File 1-run_inline - a script that runs python code  
 File 2-print.py - prints a string exactly  
-File 3-print_numbe.py - prints number and integer  
+File 3-print_numbe.py - prints number and string 
+File 4-print_float.py - prints float and string 

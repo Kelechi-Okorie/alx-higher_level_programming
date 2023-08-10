@@ -11,3 +11,4 @@ File 7-edges.py - prints edges of a string
 File 8-concat_edges.py - concatenates and prints strings  
 File 9-easter_egg.py - prints zen of python by TimPeters  
 File 10-check_cycle.c, lists.h - checks for cycle in a linked list
+File 100-write.py - python script that prints a string to stderr and exits with error

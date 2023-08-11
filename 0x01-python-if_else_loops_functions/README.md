@@ -5,4 +5,5 @@ File 1-last_digit.py - determines if last digit of a number of positive, negativ
 File 2-print_alphabet.py - prints the ASCII alphabet, in lowercase  
 File 3-print_alphabt.py - prints alphabet except q and e  
 File 4-print_hexa.py - prints numbers 0 to 98 in decimal and hexadecimal  
-File 5-print_combo2.py - prints numbers from 0 to 99
+File 5-print_combo2.py - prints numbers from 0 to 99  
+File 6-print_comb3.py - prints two letter digits

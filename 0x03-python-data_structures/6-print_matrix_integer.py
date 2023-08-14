@@ -9,7 +9,7 @@ def print_matrix_integer(matrix=[[]]):
                 if i == n:
                     print("{:d}".format(r[i]), end="\n")
                 else:
-                    print("{:d}".format(r[i]), end=", ")
+                    print("{:d}".format(r[i]), end=" ")
 
                 i += 1
     else:

@@ -12,3 +12,5 @@ def print_matrix_integer(matrix=[[]]):
                     print("{:d}".format(r[i]), end=", ")
 
                 i += 1
+    else:
+        print("".format(),end="\n")

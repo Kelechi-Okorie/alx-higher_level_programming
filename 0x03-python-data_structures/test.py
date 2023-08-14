@@ -1,11 +1,21 @@
 #!/usr/bin/python3
 
-s = "Kelechi"
+matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+]
 
-i = 0;
-n = len(s) - 1
+for r in matrix:
+    n = len(r) - 1
+    i = 0
 
-while i <= n:
-    print(s[i])
+    while i <= n:
+        if i == n:
+            print("{:d}".format(r[i]), end="\n")
+        else:
+            print("{:d}".format(r[i]), end=", ")
 
-    i += 1
+        i += 1
+
+

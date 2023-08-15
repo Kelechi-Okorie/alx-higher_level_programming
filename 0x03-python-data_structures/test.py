@@ -1,21 +1,10 @@
 #!/usr/bin/python3
 
-matrix = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9]
-]
+def no_c(my_string):
+    new_string = my_string.translate({ord(i): None for i in 'cC'})
+    return new_string
 
-for r in matrix:
-    n = len(r) - 1
-    i = 0
 
-    while i <= n:
-        if i == n:
-            print("{:d}".format(r[i]), end="\n")
-        else:
-            print("{:d}".format(r[i]), end=", ")
 
-        i += 1
 
 

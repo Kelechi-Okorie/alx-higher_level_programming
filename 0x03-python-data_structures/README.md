@@ -10,4 +10,5 @@ File 6-print_matrix_integer.py - prints a matrix of integers
 File 7-add_tuple.py - adds 2 tuple  
 File 8-multiple_returns.py - returns a tuple with the length of a string and its first character  
 File 9-max_integer.py - finds the biggest integer of a list  
-File 10-divisible_by_2.py - finds all multiples of 2 in a list
+File 10-divisible_by_2.py - finds all multiples of 2 in a list  
+File 11-delete_at.py - deletes the item at a specific position in a list

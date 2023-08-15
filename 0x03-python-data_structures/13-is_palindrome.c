@@ -12,9 +12,6 @@ int is_palindrome(listint_t **head)
 	int list[2000] = {0};
 	int i, j;
 
-	int list[] = {1, 2, 3, 4, 5};
-	int list[] = {2000};
-
 	listint_t *p = *head;
 
 	if (*head == NULL || (*head)->next == NULL)

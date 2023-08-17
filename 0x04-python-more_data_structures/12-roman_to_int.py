@@ -2,7 +2,7 @@
 
 def roman_to_int(roman_string):
     result = 0
-    if roman_string is None:
+    if roman_string is None or not isinstance(roman_string, str):
         return result
 
     mappings = {

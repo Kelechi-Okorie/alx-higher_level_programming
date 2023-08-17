@@ -9,4 +9,5 @@ File 5-number_keys.py - returns number of keys in a dictionary
 File 6-print_sorted_dictionary.py - prints a dictionary by orderd keys  
 File 7-update_dictionary.py - replaces or adds key/value in a dictionary  
 File 8-simple_delete.py - deletes a key in a dictionary  
-File 9-multiple_by_2.py - returns a new dictionary with values multiplied by 2
+File 9-multiple_by_2.py - returns a new dictionary with values multiplied by 2  
+File 10-best_score.py - returns a key with biggest integer value

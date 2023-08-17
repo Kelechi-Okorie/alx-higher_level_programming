@@ -11,4 +11,4 @@ File 7-update_dictionary.py - replaces or adds key/value in a dictionary
 File 8-simple_delete.py - deletes a key in a dictionary  
 File 9-multiple_by_2.py - returns a new dictionary with values multiplied by 2  
 File 10-best_score.py - returns a key with biggest integer value  
-File 11-multiply_list_map.py - returns a list with all values mu
+File 11-multiply_list_map.py - returns a list with all values multiplied by a number, using map function

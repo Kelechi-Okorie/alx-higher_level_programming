@@ -14,4 +14,5 @@ File 10-best_score.py - returns a key with biggest integer value
 File 11-multiply_list_map.py - returns a list with all values multiplied by a number, using map function  
 File 12-roman_to_int.py - converts a Roman numeral to an integer
 File 100-weight_average.py - returns the weighted average of all integers tuples (<score>, <weight>)  
-File 101-square_matrix_map.py - computes the square value of all integers of a matrix using map
+File 101-square_matrix_map.py - computes the square value of all integers of a matrix using map  
+File 102-complex_delete.py - deletes keys with a specific value in a dictionary

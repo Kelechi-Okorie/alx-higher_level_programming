@@ -13,3 +13,5 @@ File 9-max_integer.py - finds the biggest integer of a list
 File 10-divisible_by_2.py - finds all multiples of 2 in a list  
 File 11-delete_at.py - deletes the item at a specific position in a list  
 File 12-switch.py - switches value of a and b
+File 13-is_palindrome - checks if a singly linked list is a palindrome
+File 100-print_python_list_info.c - prints a python list info from a C program

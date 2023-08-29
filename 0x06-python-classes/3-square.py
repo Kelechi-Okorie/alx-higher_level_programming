@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""The square class
+
+The square class with method for
+calculating areas
+"""
+
 
 class Square:
     """A square class with size attribute and area method"""

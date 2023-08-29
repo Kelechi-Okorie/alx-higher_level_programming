@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+""" The square class.
+
+The class now reaise exception if size if wrong
+"""
+
+
 class Square:
     """The square class"""
 

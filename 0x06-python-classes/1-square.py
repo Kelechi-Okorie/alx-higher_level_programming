@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+""" The square module.
+
+A square module with a size attribute
+"""
+
 
 class Square:
     """A square class with a size"""

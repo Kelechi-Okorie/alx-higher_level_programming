@@ -4,6 +4,8 @@ Module matrix_divided
 divides all elements of a matrix
 
 """
+
+
 def matrix_divided(matrix, div):
     """Divides all elements of matrix by div
     rounded to 2 decimal places,
@@ -13,7 +15,7 @@ def matrix_divided(matrix, div):
     """
     if not isinstance(matrix, list) or len(matrix) == 0 or not matrix[0]:
         raise TypeError("matrix must be a matrix (list of lists) " +
-                "of integers/floats")
+                        "of integers/floats")
 
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
@@ -24,12 +26,12 @@ def matrix_divided(matrix, div):
     for r in matrix:
         if len(r) == 0:
             raise TypeError("matrix must be a matrix (list of lists) " +
-                    "of i ntegers/floats")
+                            "of i ntegers/floats")
 
         for c in r:
             if type(c) is not int and type(c) is not float:
                 raise TypeError("matrix must be a matrix (list of lists) " +
-                        "of integers/floats")
+                                "of integers/floats")
 
     length_rows = []
     for r in matrix:

@@ -21,3 +21,5 @@ def say_my_name(first_name, last_name=""):
     if len(last_name) > 0:
         print(end=" ")
     print(last_name, end="")
+
+    print()

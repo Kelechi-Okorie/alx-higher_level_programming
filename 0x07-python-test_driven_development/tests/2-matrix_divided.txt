@@ -37,3 +37,9 @@ Run the test cases:
 	Traceback (most recent call last):
 		...
 	ZeroDivisionError: division by zero
+
+	case 5 - division by a string
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "div")
+	Traceback (most recent call last):
+		...
+	TypeError: div must be a number

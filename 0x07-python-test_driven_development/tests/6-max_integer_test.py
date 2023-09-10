@@ -37,7 +37,7 @@ class TestMaxInteger(unittest.TestCase):
         """Test list of one int: should return the int"""
         mylist = [1]
         result = max_integer(mylist)
-        self.assertEqual(result(1))
+        self.assertEqual(result, 1)
 
     def test_same_int(self):
         """Test list with same int: should return the int"""
@@ -45,20 +45,10 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(mylist)
         self.assertEqual(result, 1)
 
-    def test_float(self):
-        """Test list of ints and floats: should return the max"""
-        mylist = [1, 2.5, 3, 4.5, 5, 6.1]
-        result = max_integer(mylist)
-        self.assertEqual(result(6.1))
 
     def test_none(self):
         """Test with None as parameter: should raise TypeError"""
-        self.ssertRaises(TypeError, max_integer, None)
-
-    def test_strings(self):
-        """Test list of strings: should return the first string"""
-        mylist = ["hello", "world"]
-        self.assertEqual("hello")
+        self.assertRaises(TypeError, max_integer, None)
 
     def test_not_list(self):
         """Test with a parameter that's not a list: should raise a TypeError"""

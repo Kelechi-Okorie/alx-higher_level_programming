@@ -6,8 +6,6 @@ bg = BaseGeometry()
 bg.integer_validator("my_int", 12)
 bg.integer_validator("width", 89)
 
-bg.integer_validator()
-
 try:
     bg.integer_validator("name", "John")
 except Exception as e:

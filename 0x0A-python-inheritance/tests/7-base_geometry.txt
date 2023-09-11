@@ -22,7 +22,7 @@ Run the tests:
 	case 1: name = width, value = 12
 	>>> bg.integer_validator("width", 12)
 	
-	case 2: value not integer
+	case 2: value is string
 	>>> bg.integer_validator("width", "alx")
 	Traceback (most recent call last):
 		...
@@ -57,3 +57,27 @@ Run the tests:
 	Traceback (most recent call last):
 		...
 	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+	case 8: value is bool
+	>>> bg.integer_validator("width", True)
+	Traceback (most recent call last):
+		...
+	TypeError: width must be an integer
+
+	case 9: value  is list
+	>>> bg.integer_validator("width", [1, 2])
+	Traceback (most recent call last):
+		...	
+	TypeError: width must be an integer
+
+	case 10: value is dictionary
+	>>> bg.integer_validator("width", {"a": 1, "c": 2})
+	Traceback (most recent call last):
+		...
+	TypeError: width must be an integer
+
+	case 11: value is None
+	>>> bg.integer_validator("width", None)
+	Traceback (most recent call last):
+		...
+	TypeError: width must be an integer

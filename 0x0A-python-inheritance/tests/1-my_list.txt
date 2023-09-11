@@ -1,0 +1,40 @@
+The ``1-my_list`` module
+========================
+
+Using ``MyList``
+----------------
+
+Import the class:
+
+	>>> MyList = __import__('1-my_list').MyList
+
+Run the tests:
+
+	case 0: bind my_list to MyList()
+	>>> my_list = MyList()
+
+	case 1: show my_list is initialized to empty list
+	>>> my_list
+	[]
+
+	>>> my_list.append(1)
+
+	>>> my_list.append(4)
+
+	>>> my_list.append(2)
+
+	>>> my_list.append(3)
+
+	>>> my_list.append(5)
+
+	case 2: show list contains 1, 4, 2, 3, 5
+	>>> my_list
+	[1, 4, 2, 3, 5]
+
+	case 3: print sorted list
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+	case 4: show original list is not modified
+	>>> my_list
+	[1, 4, 2, 3, 5]

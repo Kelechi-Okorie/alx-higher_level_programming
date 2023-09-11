@@ -1,0 +1,101 @@
+The ``matrix_mul`` module
+=========================
+
+Using ``matrix_mul``
+--------------------
+
+Import the function
+
+	>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+Run the tests cases:
+
+	case 0: a and b well formed matrices of integers
+	>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+	[[7, 10], [15, 22]]
+
+	case 1: a and b well formed matrices of integers and floats
+	>>> matrix_mul([[1, 2]], [[3.0, 4], [5, 6.0]])
+	[[13.0, 16.0]]
+
+	case 2: a and b well formed matrices of positive and negative integers
+	>>> matrix_mul([[1, -2], [-5, 6]], [[2, 3], [4, -7]])
+	[[-6, 17], [14, -57]]
+
+	case 3: a = matrix, b is number
+	>>> matrix_mul([[1, 2]], 9)
+	Traceback (most recent call last):
+		...
+	TypeError: m_b must be a list
+
+	case 4: a = string, b is matrix
+	>>> matrix_mul("Hello", [[1, 2]])
+	Traceback (most recent call last):
+		...
+	TypeError: m_a must be a list
+
+	case 5: a = list of strings, b = matrix
+	>>> matrix_mul(["ALX", "School"], [[1, 2]])
+	Traceback (most recent call last):
+		...
+	TypeError: m_a must be a list of lists
+
+	case 6: a = matrix, b = list of strings
+	>>> matrix_mul([[1, 2]], ["ALX", "School"])
+	Traceback (most recent call last):
+		...
+	TypeError: m_b must be a list of lists
+
+	case  7: a = empty list, b = matrix
+	>>> matrix_mul([], [[1, 2]])
+	Traceback (most recent call last):
+		...
+	ValueError: m_a can't be empty
+
+	case 8: a = matrix, b = empty list
+	>>> matrix_mul([[1, 2]], [])
+	Traceback (most recent call last):
+		...
+	ValueError: m_b can't be empty
+
+	case 9: a = matrix with string element, b = matrix
+	>>> matrix_mul([[1, 2], ["ALX", 9]], [[1, 2], [3, 4]])
+	Traceback (most recent call last):
+		...
+	TypeError: m_a should contain only integers or floats
+
+	case 10: a = matrix, b = matrix with string element
+	>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], ["ALX", 2]])
+	Traceback (most recent call last):
+		...
+	TypeError: m_b should contain only integers or floats
+
+	case 11: a = wrongly sized matrix, b = matrix
+	>>> matrix_mul([[1, 2], [3]], [[1, 2], [3, 4]])
+	Traceback (most recent call last):
+		...
+	TypeError: each row of m_a must be of the same size
+
+	case 12: a = matrix, b = wrongly sized matrix
+	>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3]])
+	Traceback (most recent call last):
+		...
+	TypeError: each row of m_b must be of same size
+
+	case 13: a and b wrongly sized matrix
+	>>> matrix_mul([[1, 2, 3], [4, 5, 6]], [[1, 2], [3, 4]])
+	Traceback (most recent call last):
+		...
+	ValueError: m_a and m_b can't be multiplied
+
+	case 14: a = matrix, b = missing
+	>>> matrix_mul([[1, 2], [3, 4]])
+	Traceback (most recent call last):
+		...
+	TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+	case 15: a and b missing
+	>>> matrix_mul()
+	Traceback (most recent call last):
+		...
+	TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'

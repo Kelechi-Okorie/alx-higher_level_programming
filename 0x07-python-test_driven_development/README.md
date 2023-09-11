@@ -5,4 +5,5 @@ Files 2-matrix_divided.py, tests/2-matrix_divided.txt - A function that divides 
 Files 3-say_my_name.py, tests/3-say_my_name.txt - A function that prints my name  
 Files 4-print_square.py, tests/4-print_square.txt - prints a square with the character #  
 Files 5-text_indentation.py, tests/5-text_indentation.txt - prints a text with 2 new lines after each of these characters ., ? and :  
-File tests/6-max_integer_test.py - unittest for the function max_integer
+File tests/6-max_integer_test.py - unittest for the function max_integer  
+Files 100-matrix_mul.py, tests/100-matrix_mul.txt - multiplies 2 rectangular matrices

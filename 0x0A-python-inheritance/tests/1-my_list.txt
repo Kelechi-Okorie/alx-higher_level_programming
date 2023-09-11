@@ -38,3 +38,12 @@ Run the tests:
 	case 4: show original list is not modified
 	>>> my_list
 	[1, 4, 2, 3, 5]
+
+	case 5: initialize list with elements
+	>>> my_list = MyList([1, 4, 2, 3, 5])
+
+	>>> my_list
+	[1, 4, 2, 3, 5]
+
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]

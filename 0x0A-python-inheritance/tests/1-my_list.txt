@@ -52,3 +52,11 @@ Run the tests:
 
 	>>> my_list.print_sorted()
 	[]
+
+	>>> my_list = MyList("hello")
+
+	>>> my_list
+	['h', 'e', 'l', 'l', 'o']
+
+	>>> my_list.print_sorted()
+	['e', 'h', 'l', 'l', 'o']

@@ -11,4 +11,5 @@ File 7-base_geometry.py, tests/7-base_geometry.txt - class BaseGeometry based on
 File 8-rectangle.py - adds width and height private variables to 7-base_geometry.py  
 File 9-rectangle.py - implements area method for 8-rectangle.py  
 File 10-square.py - class Square that inherits from Rectangle (9-rectangle)  
-File 11-square.py - class Square inherits from Rectangle (9-rectangle)
+File 11-square.py - class Square inherits from Rectangle (9-rectangle)  
+File 100-my_int.py - class MyInt that inherits from int

@@ -7,4 +7,5 @@ File 3-is_kind_of_class.py - returns True if the object is an instance of, or if
 File 4-inherits_from.py - returns true if the object is an instance of a class that inherited (directory or indirectory) from the specified class, otherwise return false  
 File 5-base_geometry.py - an empty class BaseGeomtry  
 File 6-base_geometry.py - defines an area that raises Exception with the message area() is not implemented  
-File 7-base_geometry.py, tests/7-base_geometry.txt - class BaseGeometry based on 6-base_geometry.py
+File 7-base_geometry.py, tests/7-base_geometry.txt - class BaseGeometry based on 6-base_geometry.py  
+File 8-rectangle.py - adds width and height private variables to 7-base_geometry.py

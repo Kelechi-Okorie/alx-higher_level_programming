@@ -81,3 +81,21 @@ Run the tests:
 	Traceback (most recent call last):
 		...
 	TypeError: width must be an integer
+
+	case 12: convert string to float
+	>>> bg.integer_validator("width", float('inf'))
+	Traceback (most recent call last):
+		...
+	TypeError: width must be an integer
+
+	case 13: value is very large integer
+	>>> bg.integer_validator("width", 1000e1000)
+	Traceback (most recent call last):
+		...
+	TypeError: width must be an integer
+
+	case 14: value is negative float
+	>>> bg.integer_validator("width", -12.6)
+	Traceback (most recent call last):
+		...
+	TypeError: width must be an integer

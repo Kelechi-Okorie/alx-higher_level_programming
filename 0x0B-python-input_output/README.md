@@ -5,4 +5,5 @@ File 1-write_file.py - writes a string to a text file and returns the number of 
 File 2-append_write.py - appends a string at the end of a text file (UTF8) and returns the number of characters added  
 File 3-to_json_string.py - returns the JSON representation of an object (string)  
 File 4-from_json_string.py - returns an object (Python data structure) represented by a JSON string  
-File 5-save_to_json_file.py - function that writes an Object to a text file, using JSON representation
+File 5-save_to_json_file.py - function that writes an Object to a text file, using JSON representation  
+File 6-load_from_json_file.py - function that creates an Object from a JSON file

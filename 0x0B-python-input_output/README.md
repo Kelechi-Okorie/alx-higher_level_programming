@@ -10,4 +10,5 @@ File 6-load_from_json_file.py - function that creates an Object from a JSON file
 File 7-add_item.py - script that adds all arguments to a Python list and saves them to a file  
 File 8-class_to_json.py - returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object  
 File 9-student.py - defines a class Student with some instance attributes  
-File 10-student.py - Class student that defines a student bases on 9-student.py
+File 10-student.py - Class student that defines a student bases on 9-student.py  
+file 11-student.py - class student that defines a student based on 10-student.py and adds a method reload_from_json

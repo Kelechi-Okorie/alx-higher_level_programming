@@ -6,4 +6,6 @@ File 2-append_write.py - appends a string at the end of a text file (UTF8) and r
 File 3-to_json_string.py - returns the JSON representation of an object (string)  
 File 4-from_json_string.py - returns an object (Python data structure) represented by a JSON string  
 File 5-save_to_json_file.py - function that writes an Object to a text file, using JSON representation  
-File 6-load_from_json_file.py - function that creates an Object from a JSON file
+File 6-load_from_json_file.py - function that creates an Object from a JSON file  
+File 7-add_item.py - script that adds all arguments to a Python list and saves them to a file  
+File 8-class_to_json.py - returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object

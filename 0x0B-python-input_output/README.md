@@ -8,4 +8,5 @@ File 4-from_json_string.py - returns an object (Python data structure) represent
 File 5-save_to_json_file.py - function that writes an Object to a text file, using JSON representation  
 File 6-load_from_json_file.py - function that creates an Object from a JSON file  
 File 7-add_item.py - script that adds all arguments to a Python list and saves them to a file  
-File 8-class_to_json.py - returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object
+File 8-class_to_json.py - returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object  
+File 9-student.py - defines a class Student with some instance attributes

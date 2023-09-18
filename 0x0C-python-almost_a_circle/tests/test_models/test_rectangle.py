@@ -70,7 +70,7 @@ class TestRectangle(unittest.TestCase):
         msg1 = "__init__() missing 2 required positional"
         msg2 = msg1 + " arguments: 'width' and 'height'"
         the_exception = x.exception
-        self.assertEqual(str(the_exception), msg)
+        self.assertEqual(str(the_exception), msg2)
 
     def test_3_wrong_attributes(self):
         """Test rectangle class for wrong attributes"""

@@ -72,7 +72,7 @@ class TestSquare(unittest.TestCase):
             sq.display()
         string_value = string_buffer.getvalue()
         display_value = "####\n####\n####\n####\n"
-        self.assertEquals(string_value, display_value)
+        self.assertEqual(string_value, display_value)
 
     def test_11_attributes(self):
         """Test Square class for size attributes"""

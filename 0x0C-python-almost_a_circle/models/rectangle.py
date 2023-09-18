@@ -158,7 +158,7 @@ class Rectangle(Base):
                 self.id, self.__x, self.__y, self.__width, self.__height)
         return s
     
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates the variables of the rectangle
 
         Args
@@ -184,3 +184,17 @@ class Rectangle(Base):
                     self.x = args[3]
                 if len(args) > 4:
                     self.y = args[4]
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if type(value) is not int:
+                        raise TypeError("id must be an integer")
+                    self.id = value
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value

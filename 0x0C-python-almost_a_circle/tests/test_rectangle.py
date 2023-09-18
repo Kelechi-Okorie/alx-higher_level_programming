@@ -220,6 +220,57 @@ class TestRectangle(unittest.TestCase):
         the_exception = x.exception
         self.assertEqual(str(the_exception), "height must be an integer")
 
+    def test_9_update(self):
+        """Test call to update function with key word arguments"""
+
+        rect = Rectangle(10, 10, 10, 10)
+        rect.update(height=1)
+        self.assertEqual(rect.height, 1)
+        rect.update(x=1, height=2, y=3, width=4)
+        self.assertEqual(rect.x, 1)
+        self.assertEqual(rect.height, 2)
+        self.assertEqual(rect.y, 3)
+        self.assertEqual(rect.width, 4)
+
+    def test_9_update_exceptions(self):
+        """Test call to update with incorrect key word arguments"""
+
+        rect = Rectangle(10, 10, 10, 10)
+        with self.assertRaises(TypeError) as x:
+            rect.update(id="alx")
+        self.assertEqual(str(x.exception), "id must be an integer")
+       
+        with self.assertRaises(TypeError) as x:
+            rect.update(x="alx", height=2, y=3, width=4)
+        self.assertEqual(str(x.exception), "x must be an int")
+
+        with self.assertRaises(TypeError) as x:
+            rect.update(x=1, height="alx", y=3, width=4)
+        self.assertEqual(str(x.exception), "height must be an integer")
+
+        with self.assertRaises(TypeError) as x:
+            rect.update(x=1, height=2, y="alx", width=4)
+        self.assertEqual(str(x.exception), "y must be an int")
+
+        with self.assertRaises(TypeError) as x:
+            rect.update(x=1, height=2, y=3, width="alx")
+        self.assertEqual(str(x.exception), "width must be an integer")
+
+        with self.assertRaises(ValueError) as x:
+            rect.update(x=-1, height=2, y=3, width=4)
+        self.assertEqual(str(x.exception), "x must be >= 0")
+
+        with self.assertRaises(ValueError) as x:
+            rect.update(x=1, height=-2, y=3, width=4)
+        self.assertEqual(str(x.exception), "height must be > 0")
+
+        with self.assertRaises(ValueError) as x:
+            rect.update(x=1, height=2, y=-3, width=4)
+        self.assertEqual(str(x.exception), "y must be >= 0")
+
+        with self.assertRaises(ValueError) as x:
+            rect.update(x=1, height=2, y=3, width=-4)
+        self.assertEqual(str(x.exception), "width must be > 0")
 
         
 if __name__ == "__main__":

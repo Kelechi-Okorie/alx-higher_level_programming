@@ -14,7 +14,7 @@ class TestSquare(unittest.TestCase):
     """Test class for Square class"""
 
     def setUp(self):
-        Base._Base_nb_objects = 0
+        Base._Base__nb_objects = 0
 
     def test_10_attributes(self):
         """Test Square class for correct attributes"""

@@ -95,7 +95,7 @@ class Rectangle(Base):
         """
 
         if type(x) is not int:
-            raise TypeError("x must be an int")
+            raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
@@ -119,7 +119,7 @@ class Rectangle(Base):
         """
 
         if type(y) is not int:
-            raise TypeError("y must be an int")
+            raise TypeError("y must be an integer")
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
@@ -157,7 +157,7 @@ class Rectangle(Base):
         s = "[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.__x, self.__y, self.__width, self.__height)
         return s
-    
+
     def update(self, *args, **kwargs):
         """Updates the variables of the rectangle
 
@@ -198,3 +198,16 @@ class Rectangle(Base):
                     self.x = value
                 if key == "y":
                     self.y = value
+
+    def to_dictionary(self):
+        """Returns dictionary representation of rectangle"""
+
+        r_dict = {
+                "x": self.x,
+                "y": self.y,
+                "id": self.id,
+                "height": self.height,
+                "width": self.id,
+        }
+
+        return r_dict

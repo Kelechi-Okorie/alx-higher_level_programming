@@ -44,7 +44,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(rect.height, 2)
         self.assertEqual(rect.x, 6)
         self.assertEqual(rect.y, 12)
-    
+
     def test_2_inheritance(self):
         """Test rectangle class for correct inheritance"""
 
@@ -57,7 +57,7 @@ class TestRectangle(unittest.TestCase):
     def test_2_exceptions(self):
         """Test rectangle class for exceptions"""
 
-        with self.assertRaises(TypeError) as  x:
+        with self.assertRaises(TypeError) as x:
             rect = Rectangle(10)
 
         msg = "__init__() missing 1 required positional argument: 'height'"
@@ -67,7 +67,8 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             rect = Rectangle()
 
-        msg = "__init__() missing 2 required positional arguments: 'width' and 'height'"
+        msg1 = "__init__() missing 2 required positional"
+        msg2 = msg1 + " arguments: 'width' and 'height'"
         the_exception = x.exception
         self.assertEqual(str(the_exception), msg)
 
@@ -78,8 +79,7 @@ class TestRectangle(unittest.TestCase):
             rect = Rectangle("Hello", 2)
         the_exception = x.exception
         self.assertEqual(str(the_exception), "width must be an integer")
-        
-        
+
         with self.assertRaises(ValueError) as x:
             rect = Rectangle(0, 2)
         the_exception = x.exception
@@ -89,7 +89,7 @@ class TestRectangle(unittest.TestCase):
             rect = Rectangle(-10, 2)
         the_exception = x.exception
         self.assertEqual(str(the_exception), "width must be > 0")
-        
+
         with self.assertRaises(TypeError) as x:
             rect = Rectangle(10, "hello")
         the_exception = x.exception
@@ -108,7 +108,7 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             rect = Rectangle(10, 2, "Hello", 3)
         the_exception = x.exception
-        self.assertEqual(str(the_exception), "x must be an int")
+        self.assertEqual(str(the_exception), "x must be an integer")
 
         with self.assertRaises(ValueError) as x:
             rect = Rectangle(10, 2, -1, 3)
@@ -118,7 +118,7 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             rect = Rectangle(10, 2, 1, "Hello")
         the_exception = x.exception
-        self.assertEqual(str(the_exception), "y must be an int")
+        self.assertEqual(str(the_exception), "y must be an integer")
 
         with self.assertRaises(ValueError) as x:
             rect = Rectangle(10, 2, 1, -3)
@@ -172,7 +172,7 @@ class TestRectangle(unittest.TestCase):
         """Test call to __str__"""
 
         string_buffer = io.StringIO()
-        rect = Rectangle(4, 6, 2, 1, 12 )
+        rect = Rectangle(4, 6, 2, 1, 12)
         with contextlib.redirect_stdout(string_buffer):
             print(rect)
         buffer_value = string_buffer.getvalue()
@@ -239,10 +239,10 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             rect.update(id="alx")
         self.assertEqual(str(x.exception), "id must be an integer")
-       
+
         with self.assertRaises(TypeError) as x:
             rect.update(x="alx", height=2, y=3, width=4)
-        self.assertEqual(str(x.exception), "x must be an int")
+        self.assertEqual(str(x.exception), "x must be an integer")
 
         with self.assertRaises(TypeError) as x:
             rect.update(x=1, height="alx", y=3, width=4)
@@ -250,7 +250,7 @@ class TestRectangle(unittest.TestCase):
 
         with self.assertRaises(TypeError) as x:
             rect.update(x=1, height=2, y="alx", width=4)
-        self.assertEqual(str(x.exception), "y must be an int")
+        self.assertEqual(str(x.exception), "y must be an integer")
 
         with self.assertRaises(TypeError) as x:
             rect.update(x=1, height=2, y=3, width="alx")
@@ -272,6 +272,30 @@ class TestRectangle(unittest.TestCase):
             rect.update(x=1, height=2, y=3, width=-4)
         self.assertEqual(str(x.exception), "width must be > 0")
 
-        
+    def test_13_dictionary(self):
+        """Test Rectangle class for to_dictionary method"""
+
+        rect = Rectangle(10, 2, 1, 9)
+        rect_dict = rect.to_dictionary()
+        self.assertEqual(type(rect_dict), dict)
+        sample_dict = {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}
+        self.assertEqual(len(rect_dict), len(sample_dict))
+        rect2 = Rectangle(1, 2)
+        rect2.update(**rect_dict)
+        rect2_dict = rect2.to_dictionary()
+        self.assertEqual(len(rect_dict), len(rect2_dict))
+        self.assertEqual(type(rect2_dict), dict)
+        self.assertFalse(rect == rect2)
+
+    def test_13_exception(self):
+        """Test Rectangle class for wrong args with to_dictionary"""
+
+        with self.assertRaises(TypeError) as x:
+            rect = Rectangle(10, 2, 1, 9)
+            rect_dict = rect.to_dictionary("alx")
+        msg = "to_dictionary() takes 1 positional argument but 2 were given"
+        self.assertEqual(str(x.exception), msg)
+
+
 if __name__ == "__main__":
     unittest.main()

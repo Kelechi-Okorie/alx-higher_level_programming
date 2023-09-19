@@ -5,10 +5,14 @@ Contains test cases for the base class
 
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
 
 
 class TestBase(unittest.TestCase):
     """Test class for the Base class"""
+
+    def setUp(self):
+        Base._Base__nb_objects = 0
 
     def test_task_id(self):
         """Create new instance and test for correct id"""
@@ -42,8 +46,8 @@ class TestBase(unittest.TestCase):
         my_json = Base.to_json_string([my_dict])
         self.assertTrue(isinstance(my_dict, dict))
         self.assertTrue(isinstance(my_json, str))
-        self.assertCountEqual(
-                my_json, '[{"x": 2, "width": 10, "id": 1, "height": 7, "y": 8}]')
+        my_str = '[{"x": 2, "width": 10, "id": 1, "height": 7, "y": 8}]'
+        self.assertCountEqual(my_json, my_str)
         json_dict_1 = Base.to_json_string([])
         self.assertEqual(json_dict_1, "[]")
         json_dict_2 = Base.to_json_string(None)
@@ -101,6 +105,24 @@ class TestBase(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             Base.to_json_string([{1, 2}], [{3, 4}])
         self.assertEqual(str(x.exception), msg2)
+
+    def test_16_write(self):
+        """Testing Base class static method save_to_file with normal args"""
+
+        rect1 = Rectangle(10, 7, 2, 8)
+        rect2 = Rectangle(2, 4)
+        Rectangle.save_to_file([rect1, rect2])
+        my_str = '[{"y": 8", "x": 2, "id": 1, "width": 10, "height": 7},'
+        my_str += ' {"y": 0, "x": 0, "id": 2, "width": 2, "height":  4 }]'
+        result = (my_str)
+        with open("Rectangle.json", "r") as f:
+            self.assertEqual(len(f.read()), len(result))
+
+        Rectangle.save_to_file(None)
+        result = '[]'
+        with open("Rectangle", "r") as f:
+            self.assertEqual(f.read(), result)
+
 
 if __name__ == "__main__":
     unittest.main()

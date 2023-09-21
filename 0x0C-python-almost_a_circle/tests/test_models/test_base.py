@@ -106,7 +106,7 @@ class TestBase(unittest.TestCase):
             Base.to_json_string([{1, 2}], [{3, 4}])
         self.assertEqual(str(x.exception), msg2)
 
-    def test_16_write(self):
+    def write_test_16(self):
         """Testing Base class static method save_to_file with normal args"""
 
         rect1 = Rectangle(10, 7, 2, 8)

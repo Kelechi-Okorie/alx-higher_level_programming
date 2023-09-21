@@ -115,7 +115,10 @@ class TestBase(unittest.TestCase):
         my_str = '[{"y": 8", "x": 2, "id": 1, "width": 10, "height": 7},'
         my_str += ' {"y": 0, "x": 0, "id": 2, "width": 2, "height":  4 }]'
         result = (my_str)
+        print("\nres - ", result)
         with open("Rectangle.json", "r") as f:
+            content = f.read()
+            print("\nrea - ", content)
             self.assertEqual(len(f.read()), len(result))
 
         Rectangle.save_to_file(None)

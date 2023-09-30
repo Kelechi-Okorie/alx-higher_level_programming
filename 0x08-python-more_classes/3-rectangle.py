@@ -92,4 +92,4 @@ class Rectangle:
                 string = string + "#"
             string = string + "\n"
 
-        return string
+        return string[:-1]

@@ -141,9 +141,7 @@ class Rectangle:
         Returns: a new rectangle with width == height == size
         """
 
-        square_str = "Rectangle({}, {})".format(size, size)
-
-        return eval(square_str)
+        return cls(size, size)
 
     def __del__(self):
         """ The destructor for Rectangle class """

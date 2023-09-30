@@ -87,6 +87,10 @@ class Rectangle:
         """ returns the string representation of the rectangle """
 
         string = ""
+
+        if self.__width == 0 or self.__height == 0:
+            return string
+
         for h in range(0, self.__height):
             for w in range(0, self.__width):
                 string = string + "#"

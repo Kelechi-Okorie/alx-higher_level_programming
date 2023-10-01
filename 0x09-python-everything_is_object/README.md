@@ -24,4 +24,5 @@ File 20-answer.txt - answers if a = () is a tuple
 File 21-answer.txt - answers whether a = (1, 2) is a tuple  
 File 22-answer.txt - answers whether a = (1) is a tuple  
 File 23-answer.txt - answers whether a = (1, ) is a tupple  
-file 24-answer.txt - answers whether a = (1) is b = (1)
+file 24-answer.txt - answers whether a = (1) is b = (1)  
+File 25-answer.txt - answers whether a = (1, 2) is b = (1, 2)

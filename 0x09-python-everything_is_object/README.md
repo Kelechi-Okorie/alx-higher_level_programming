@@ -26,4 +26,5 @@ File 22-answer.txt - answers whether a = (1) is a tuple
 File 23-answer.txt - answers whether a = (1, ) is a tupple  
 file 24-answer.txt - answers whether a = (1) is b = (1)  
 File 25-answer.txt - answers whether a = (1, 2) is b = (1, 2)  
-File 26-answer.txt - answers whether a=() is b=()
+File 26-answer.txt - answers whether a=() is b=()  
+File 27-answer.txt - whether the address of a list changes when a new element is appended to the list 

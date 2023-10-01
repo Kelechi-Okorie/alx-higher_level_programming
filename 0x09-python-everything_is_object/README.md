@@ -18,4 +18,5 @@ File 14-answer.txt - answers whether list is immutable
 File 15-answer.txt - answers whether list is immutable  
 File 16-answer.txt - checks if a function can modify its int argument  
 File 17-answer.txt - checks if a function can modify its list argument
-File 18-answer.txt - checks if a function can reassign a list
+File 18-answer.txt - checks if a function can reassign a list  
+File 19-copy_list.py - copies a list

@@ -20,4 +20,5 @@ File 16-answer.txt - checks if a function can modify its int argument
 File 17-answer.txt - checks if a function can modify its list argument
 File 18-answer.txt - checks if a function can reassign a list  
 File 19-copy_list.py - copies a list  
-File 20-answer.txt - answers if a = () is a tuple
+File 20-answer.txt - answers if a = () is a tuple  
+File 21-answer.txt - answers whether a = (1, 2) is a tuple

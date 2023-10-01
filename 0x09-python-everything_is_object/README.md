@@ -2,4 +2,6 @@
 
 File 0-answer.txt - function to get the type of object
 File 1-answer.txt - function to get memory address of object pointed by identifier
-File 2-answer.txt - answers whether int is immutable
+File 2-answer.txt - answers whether int is immutable  
+File 3-answer.txt - answers whether int is immutable  
+File 4-answer.txt  - answers whether int is immutable

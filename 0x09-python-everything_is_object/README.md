@@ -16,4 +16,5 @@ File 12-answer.txt - answers whether list is immutable
 File 13-answer.txt - answers whether list is immutable  
 File 14-answer.txt - answers whether list is immutable
 File 15-answer.txt - answers whether list is immutable  
-File 16-answer.txt - checks if a function can modify its argument
+File 16-answer.txt - checks if a function can modify its int argument  
+File 17-answer.txt - checks if a function can modify its list argument

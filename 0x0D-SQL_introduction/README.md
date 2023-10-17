@@ -13,3 +13,4 @@ File 9-full_creation.sql - creates a table second_table in the db hbtn_0c_0
 File 10-top_score.sql - lists all records of the table second_table  
 File 11-best_score.sql - lists all records with score >= 10 in second_table
 File 12-no_cheating.sql - updates the score of Bob to 10 in second_table
+File 13-change_class.sql removes all records with a score <= 5 in the second_table

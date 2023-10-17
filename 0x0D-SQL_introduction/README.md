@@ -16,4 +16,5 @@ File 12-no_cheating.sql - updates the score of Bob to 10 in second_table
 File 13-change_class.sql removes all records with a score <= 5 in the second_table  
 File 14-average.sql - computes the score average of ll records in second_table
 File 15-groups.sql - lists the number of records with the same score in second_table  
-File 16-no_link.sql - lists all records of the table second_table
+File 16-no_link.sql - lists all records of the table second_table  
+File 100-move_to_utf8.sql - converts htbn_0c_0 database to UTF8(utf8mb4, collate utf8mb4_unicode_ci)

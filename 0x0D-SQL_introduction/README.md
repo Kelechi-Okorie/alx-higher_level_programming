@@ -8,3 +8,4 @@ File 4-first_table.sql - crates a table in the current db
 File 5-full_table.sql - prints full description of the table
 File 6-list_values.sql - lists all rows of the table  
 File 7-insert_value.sql - inserts a new row in the table first_table
+File 8-count_89.sql - counts the number of records with id 89 in first_table

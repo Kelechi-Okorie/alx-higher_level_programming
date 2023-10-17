@@ -15,4 +15,5 @@ File 11-best_score.sql - lists all records with score >= 10 in second_table
 File 12-no_cheating.sql - updates the score of Bob to 10 in second_table
 File 13-change_class.sql removes all records with a score <= 5 in the second_table  
 File 14-average.sql - computes the score average of ll records in second_table
-File 15-groups.sql - lists the number of records with the same score in second_table
+File 15-groups.sql - lists the number of records with the same score in second_table  
+File 16-no_link.sql - lists all records of the table second_table

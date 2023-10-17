@@ -10,4 +10,5 @@ File 6-list_values.sql - lists all rows of the table
 File 7-insert_value.sql - inserts a new row in the table first_table
 File 8-count_89.sql - counts the number of records with id 89 in first_table  
 File 9-full_creation.sql - creates a table second_table in the db hbtn_0c_0  
-File 10-top_score.sql - lists all records of the table second_table
+File 10-top_score.sql - lists all records of the table second_table  
+File 11-best_score.sql - lists all records with score >= 10 in second_table

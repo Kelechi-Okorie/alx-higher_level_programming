@@ -2,4 +2,5 @@
 
 File 0-privileges.sql - lists all privileges of the MSQL users  
 File 1-create_user.sql - creates a new user
-File 2-create_read_user.sql - creates new db and a new user
+File 2-create_read_user.sql - creates new db and a new user  
+File 3-force_name.sql - creates the table force_name

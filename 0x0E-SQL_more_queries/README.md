@@ -10,3 +10,4 @@ File 6-states.sql - created db hbtn_0d_usa and table states
 File 7-cities.sql - creates db hbtn_0d_usa and table cities
 File 8-cities_of_california_subquery.sql - lists all cities of california  
 File 9-cities_by_state_join.sql - lists all cities contained in the db
+File 10-genre_id_by_show.sql - lists all shows contained in hbtn_0d_tvshows

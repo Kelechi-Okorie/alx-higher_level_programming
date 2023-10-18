@@ -12,4 +12,5 @@ File 8-cities_of_california_subquery.sql - lists all cities of california
 File 9-cities_by_state_join.sql - lists all cities contained in the db
 File 10-genre_id_by_show.sql - lists all shows contained in hbtn_0d_tvshows  
 File 11-genre_id_all_shows.sql - lists all shows contained in the db hbtn_0d_tvshow
-File 12-no_genre.sql - lists all shows contained in db hbtn_0d_tvshows without genre linked
+File 12-no_genre.sql - lists all shows contained in db hbtn_0d_tvshows without genre linked  
+File 13-count_shows_by_genre.sql lists all genres from hbtn_0d_tvshows

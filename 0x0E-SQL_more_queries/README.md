@@ -15,4 +15,5 @@ File 11-genre_id_all_shows.sql - lists all shows contained in the db hbtn_0d_tvs
 File 12-no_genre.sql - lists all shows contained in db hbtn_0d_tvshows without genre linked  
 File 13-count_shows_by_genre.sql lists all genres from hbtn_0d_tvshows  
 File 14-my_genres.sql - lists all genres of the show Dexter  
-File 15-comedy_only.sql - lists all  Comedy shows in the db
+File 15-comedy_only.sql - lists all  Comedy shows in the db  
+File 16-shows_by_genre.sql - lists all shows, and all genres linked to the show

@@ -18,7 +18,8 @@
 --
 -- Table structure for table `tv_genres`
 --
-
+CREATE DATABASE IF NOT EXISTS hbtn_0d_tvshows_rate;
+USE hbtn_0d_tvshows_rate;
 DROP TABLE IF EXISTS `tv_genres`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;

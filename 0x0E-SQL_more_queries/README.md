@@ -18,4 +18,5 @@ File 14-my_genres.sql - lists all genres of the show Dexter
 File 15-comedy_only.sql - lists all  Comedy shows in the db  
 File 16-shows_by_genre.sql - lists all shows, and all genres linked to the show  
 File 100-not_my_genres.sql - list all genres not linked to the show Dexter  
-File 101-not_a_comedy.sql - lists all shows without genre Comedy in the db
+File 101-not_a_comedy.sql - lists all shows without genre Comedy in the db  
+File 102-rating_shows.sql - lists all shows from db by their rating

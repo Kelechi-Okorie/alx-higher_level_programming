@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const langs = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+const langs = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 langs.forEach((lang, index) => {
   console.log(lang);
 });

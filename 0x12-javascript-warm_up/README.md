@@ -12,3 +12,4 @@ File 8-square.js
 File 9-add - adds two integers
 File 10-factorial - computes and prints factorial
 File 11-second_biggest.js - searches second biggest in a list of args
+file 12-object.js - replaces the value 12 with 89

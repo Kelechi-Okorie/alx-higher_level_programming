@@ -9,3 +9,4 @@ File 5-to_integer.js
 File 6-multi_languages_loop.js
 File 7-multi_c.js
 File 8-square.js
+File 9-add - adds two integers

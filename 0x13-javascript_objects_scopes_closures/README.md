@@ -13,3 +13,4 @@ File 9-logme.js - prints number of arguments already printed and the new argumen
 File 10-converter.js - converts a number from base 10 to another base  
 File 100-map.js - uses Array.prototype.map  
 File 101-sorted.js - creates a dictionary of user ids by occurrence  
+File 102-concat.js - reads two files and concatenates them into a third file

@@ -4,4 +4,5 @@ File 0-rectangle.js - A class that defines a rectangle
 File 1-rectangle.js - Defines a rectangle class with width and height  
 File 2-rectangle.js - Defines a rectangle class with width and height attribs  
 File 3-rectangle.js - Adds a print method to the rectangle class  
-File 4-rectangle.js - Adds rotate and double methods to the rectangle class
+File 4-rectangle.js - Adds rotate and double methods to the rectangle class  
+File 5-square.js - A square class that inherits from the rectangle class  

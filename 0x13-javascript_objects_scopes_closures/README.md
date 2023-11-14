@@ -2,3 +2,4 @@
 
 File 0-rectangle.js - A class that defines a rectangle  
 File 1-rectangle.js - Defines a rectangle class with width and height  
+File 2-rectangle.js - Defines a rectangle class with width and height attribs  

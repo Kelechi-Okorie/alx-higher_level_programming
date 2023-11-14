@@ -10,3 +10,4 @@ File 6-square.js - square class that has a charPrint class
 file 7-occurrences.js - returns the number of occurrences in a list  
 file 8-esrever.js - returns reversed version of a list  
 File 9-logme.js - prints number of arguments already printed and the new argument value  
+File 10-converter.js - converts a number from base 10 to another base

@@ -16,4 +16,5 @@ file 12-object.js - replaces the value 12 with 89
 File 13-add.js returns the sum of 2 ints  
 File 100-let_me_const.js - modifies a global variable  
 File 101-call_me_moby.js - executes x times a function  
-File 102-add_me_maybe.js - a function that increments and calls a function
+File 102-add_me_maybe.js - a function that increments and calls a function  
+File 103-object_fct.js - adds a function to an object

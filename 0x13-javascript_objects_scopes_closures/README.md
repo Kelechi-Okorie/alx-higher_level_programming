@@ -6,3 +6,4 @@ File 2-rectangle.js - Defines a rectangle class with width and height attribs
 File 3-rectangle.js - Adds a print method to the rectangle class  
 File 4-rectangle.js - Adds rotate and double methods to the rectangle class  
 File 5-square.js - A square class that inherits from the rectangle class  
+File 6-square.js - square class that has a charPrint class

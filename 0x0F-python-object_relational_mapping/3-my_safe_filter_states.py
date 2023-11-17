@@ -21,6 +21,6 @@ if __name__ == '__main__':
     query = "SELECT * FROM states WHERE name=%s\
         ORDER by states.id ASC"
     cur.execute(query)
-    rows = cur.fetchall(query, state)
+    rows = cur.fetchall(query, (state))
     for row in rows:
         print(row)

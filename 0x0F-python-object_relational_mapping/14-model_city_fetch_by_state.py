@@ -13,7 +13,8 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     db = sys.argv[3]
-    con_string = f'mysql+mysqldb://{username}:{password}@localhost/{db}'
+    con_string = 'mysql+mysqldb://{}:{}@localhost/{}\
+        '.format(username, password, db)
     engine = create_engine(con_string)
     Base.metadata.create_all(engine)
 

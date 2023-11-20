@@ -10,4 +10,5 @@ File model_state.py - A state class/model for mapping to the states table in the
 File 7-model_state_fetch_all.py - lists all State objects from the db  
 File 8-model_state_fetch_first.py - fetches the first state in the states table  
 File 9-model_state_filter_a.py - lists all State objects that contains the letter 'a'  
-File 10-model_state_my_get.py - prints the State object with the name passed as argument f  
+File 10-model_state_my_get.py - prints the State object with the name passed as argument  
+File 12-model_state_update_id_2.py - changes the name of a State object from the db  

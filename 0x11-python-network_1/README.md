@@ -9,3 +9,4 @@ File 6-post_email.py - sends a POST request to a url with email as a parameter u
 File 7-error_code.py - sends request to a url and displays error message  
 File 8-json_api.py - takes in a letter and sends a post request with the letter as a parameter  
 File 10-my_github.py - uses GitHub API to display github id  
+File 100-github_commits.py - gets data from GitHub using GitHut api  

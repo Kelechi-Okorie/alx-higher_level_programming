@@ -19,6 +19,6 @@ if __name__ == "__main__":
         if result == {}:
             print("No result")
         else:
-            print("[{}] {}".format(res.get('id'), res.get('name')))
+            print("[{}] {}".format(result.get('id'), result.get('name')))
     except ValueError:
         print("Not a valid JSON")

@@ -10,15 +10,19 @@ const callback = (err, response, body) => {
   } else {
     const data = JSON.parse(body);
     const results = data.results;
-    // const map = results.map((result, index) => {
-    //   return results.characters;
-    // });
-    const filter = results.filter((result, index) => {
-      const characters = result.characters;
-      return characters.filter(character => character.includes('18')).length;
-    });
+    let count = 0;
 
-    console.log(filter.length);
+    for (let i = 0; i < results.length; i++) {
+      const result = results[i];
+      const characters = result.characters;
+      for (let j = 0; j < characters.length; j++) {
+        if (characters[j].includes('18')) {
+          count++;
+        }
+      }
+    }
+
+    console.log(count);
   }
 };
 
